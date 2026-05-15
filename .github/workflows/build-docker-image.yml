@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+nname: Build and Push Docker Image
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/${{ github.repository_owner }}/clawcloud:3712
+            ghcr.io/${{ github.repository_owner }}/nodetun:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=HTTP Server
